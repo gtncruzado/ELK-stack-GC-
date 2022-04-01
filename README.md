@@ -6,7 +6,7 @@ https://github.com/gtncruzado/Kibana-GC-/blob/main/Homework_12%7BGC%7D-Page-2.dr
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  - Omaha Nebraska
 
 This document contains the following details:
 - Description of the Topology
