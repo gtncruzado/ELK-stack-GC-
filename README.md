@@ -103,4 +103,4 @@ https://github.com/gtncruzado/Kibana-GC-/blob/main/ansible/hosts
 - _Which URL do you navigate to in order to check that the ELK server is running?_  http://20.211.121.143:5601/app/kibana
 
 Before running the playbook, edit the config file host to make sure your IP is added so it runs by nanoing into the file.
-To run the playbook: Ansible-playbook playbookname.yml
+To run the playbook: ansible-playbook playbookname.yml
