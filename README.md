@@ -25,19 +25,19 @@ Load balancing ensures that the application will be highly available, in additio
 - _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- Filebeat watches for changes to the files and keeps a record of those changes and when they occurred in log files
+- Metricbeat records metrics from the Operating system and services running on the server. By using Elasticsearch or Logstash, you can visualize the metrics and statistics that Metricbeat generates from the OS and running services.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function  | IP Address | Operating System |
-|----------|-----------|------------|------------------|
-| Jump Box | Gateway   | 10.0.0.5   | Linux            |
-| Web-1    |Application| 10.0.0.6   | Linux            |
-| Web-2    |Application| 10.0.0.7   | Linux            |
-| Web-3    |Application| 10.0.0.4   | Linux            |
-|ELK Server|   Server  | 10.0.0.4   | Linux            |
+| Name                  | Function                    | IP Address | Operating System |
+|-----------------------|-----------------------------|------------|------------------|
+| newJumpBoxProvisioner | Gateway                     | 10.0.0.5   | Linux            |
+| Web-1                 | Application Server for DVWA | 10.0.0.6   | Linux            |
+| Web-2                 | Application Server for DVWA | 10.0.0.7   | Linux            |
+| Web-3                 | Web Server to run DVWA      | 10.0.0.4   | Linux            |
+| ELK Server            | ELK Container and Kibana    | 10.0.0.4   | Linux            |
 
 ### Access Policies
 
