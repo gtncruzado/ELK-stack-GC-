@@ -72,7 +72,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-https://github.com/gtncruzado/Kibana-GC-/blob/main/Images/of_docker_containers.PNG
+!(docker container image)[https://github.com/gtncruzado/Kibana-GC-/blob/main/Images/of_docker_containers.PNG]
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -92,8 +92,8 @@ SSH into the control node and follow the steps below:
 - Copy the filebeat-config.yml file to /etc/ansible/files/filebeat-config.yml
 - Update the filebeat-config.yml file to include host "10.1.0.4:9200" with username "elastic" and password "changeme" and setup.Kibana host to "10.1.0.4:5601".
 - Run the playbook, and navigate to Kibana (Elk GUI interface) and click "Check Data" to check that the installation worked as expected.
-https://github.com/gtncruzado/Kibana-GC-/blob/main/Images/metric%20docker%20logs.PNG
-https://github.com/gtncruzado/Kibana-GC-/blob/main/Images/systems%20logs.PNG
+![docker logs](https://github.com/gtncruzado/Kibana-GC-/blob/main/Images/metric%20docker%20logs.PNG)
+![systems logs](https://github.com/gtncruzado/Kibana-GC-/blob/main/Images/systems%20logs.PNG)
 
 - _Which file is the playbook?_ filebeat-playbook.yml _Where do you copy it?_ /etc/ansible/roles/filebeat.playbook.yml
 - _Which file do you update to make Ansible run the playbook on a specific machine?_ filebeat-config.yml _How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ First, all private IP addresses that need to be accessed need to be added to the hosts file in order to allow connection. For the purposes of this project, we added 3 IP addresses to this file: 2 were web servers (10.0.0.5 & 10.0.0.6) and an elk server was added with IP 10.1.0.4. From there, in the playbook file, navigate to "hosts" at the top of the file to specify whether you want the playbook installed on Elk or the Web servers. In addition to this, we also have to specify the host to the ELK server for Filebeat so IP "10.1.0.4" is added to the config file to specify the location for installation.
