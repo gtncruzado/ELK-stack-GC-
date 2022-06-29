@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-https://github.com/gtncruzado/Kibana-GC-/blob/main/diagrams/Diagram_1.drawio.png
+![Diagram](https://github.com/gtncruzado/Kibana-GC-/blob/main/diagrams/Diagram_1.drawio.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -44,7 +44,6 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the ELK Server machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
 
 Machines within the network can only be accessed by "newJumpBoxPrivisioner".
 - Only the "newJumpBoxPrivioner" could access the ELK-VM
@@ -72,7 +71,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-!(docker container image)[https://github.com/gtncruzado/Kibana-GC-/blob/main/Images/of_docker_containers.PNG]
+![docker container image](https://github.com/gtncruzado/Kibana-GC-/blob/main/Images/of_docker_containers.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
